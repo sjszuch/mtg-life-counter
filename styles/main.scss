@@ -1,0 +1,79 @@
+$primary: #581845;
+$secondary: #900c3f;
+$hover: #ffd7e6;
+$red-1: #c70039;
+$orange-1: #ff5733;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@mixin player-card($c) {
+  background-color: $c;
+  text-align: center;
+  color: #ffffff;
+
+  width: 15rem;
+  padding: 1rem;
+  margin: auto;
+
+  border-radius: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: Inter;
+  line-height: 1.5;
+}
+
+body {
+  background-color: $primary;
+  height: 100vh;
+}
+
+header {
+  background-color: $secondary;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $hover;
+    transition: 0.3s;
+  }
+
+  &:active {
+      width: 45px;
+      height: 45px;
+  }
+}
+
+.player1-card {
+  @include player-card($red-1);
+}
+
+.player2-card {
+  @include player-card($orange-1);
+}
+
+.dice-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  p {
+    background-color: white;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 15px;
+  }
+}

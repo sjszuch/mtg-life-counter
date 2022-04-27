@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>LifeCount</title>
+  </head>
+  <body>
+    <header>
+      <h3>LifeCount</h3>
+    </header>
+
+    <div class="player1-card">
+      <h3 id="player1-HP">h</h3>
+      <div class="card-buttons">
+        <button onclick="minusHP(1)">-</button>
+        <button onclick="plusHP(1)">+</button>
+      </div>
+    </div>
+
+    <div class="dice-card">
+      <button onclick="rollDice(20)"><i class="fa-solid fa-2x fa-dice-d20"></i></button>
+      <button onclick="rollDice(6)"><i class="fa-solid fa-2x fa-dice-five"></i></button>
+      <p id="dice-out"></p>
+    </div>
+
+    <div class="player2-card">
+      <h3 id="player2-HP"></h3>
+      <div class="card-buttons">
+        <button onclick="minusHP(2)">-</button>
+        <button onclick="plusHP(2)">+</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
