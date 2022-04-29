@@ -1,5 +1,5 @@
 // Default health counts
-let p1Count = 20; 
+let p1Count = 20;
 let p2Count = 20;
 
 // Updates the website to check and display current health
@@ -19,21 +19,21 @@ function update() {
 update();
 
 // Adds health to a player on button click
-function plusHP(p) {
+function plusHP(p, amount) {
     if (p == 1) {
-        p1Count++;
+        p1Count = p1Count + amount;
     } else {
-        p2Count++;
+        p2Count = p2Count + amount;
     }
     update();
 }
 
 // Subtracts health to a player on button click
-function minusHP(p) {
+function minusHP(p, amount) {
     if (p == 1) {
-        p1Count--;
+        p1Count = p1Count - amount;
     } else {
-        p2Count--
+        p2Count = p2Count - amount;
     }
     update();
 }

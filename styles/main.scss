@@ -51,8 +51,8 @@ button {
   }
 
   &:active {
-      width: 45px;
-      height: 45px;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -70,6 +70,7 @@ button {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+
   p {
     background-color: white;
     width: fit-content;
