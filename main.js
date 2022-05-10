@@ -4,10 +4,10 @@ let p2Count = 20;
 
 // Updates the website to check and display current health
 function update() {
-    if (p1Count == 0) {
+    if (p1Count < 1) {
         alert("Player 2 Wins!!");
         location.reload();
-    } else if (p2Count == 0) {
+    } else if (p2Count < 1) {
         alert("Player 1 Wins!!")
         location.reload();
     }
